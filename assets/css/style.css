@@ -46,8 +46,7 @@ header a {
 }
 /* burada men faiznen yox saytdaki kimi olculer yazdim */
 .logo img {
-    
-}
+    }
 
 /* media queries */
 @media (max-width:1400px) {
@@ -79,7 +78,7 @@ header a {
     text-align: center;
     padding: 20px 0;  
     transition: 0.4s;  
-    line-height: 33px; 150%
+    /* line-height: 33px; 150% */
 }
 
 .call a {
@@ -104,5 +103,21 @@ header a {
 .regist:hover {
     color: white;
     background-color: transparent;
-    
+}
+/* navigation settings */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+nav a {
+    color: white;
+    margin-right: 40px;
+}
+.navlinks a:hover {
+    color: var(--secondary);
+    }
+.activepage {
+    color: var(--secondary);
 }
