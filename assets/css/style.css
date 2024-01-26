@@ -40,6 +40,8 @@ header a {
     height: 188px;   
 }
 
+
+
 .logo {
     width: 378px;
     height: 188px;
@@ -62,9 +64,27 @@ header a {
 }
 
 @media (max-width:768px) {
-    .container {width: 540px;}
-}
+    .container {
+        width: 540px;}
 
+
+    .bighead,
+    nav {
+        display: none;
+    }
+
+    .mobileversion {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobileversion .logo img {
+        width: 100px;
+        }
+
+
+}
 @media (max-width:576px) {
     .container {width: 100%;}
 }
@@ -108,13 +128,15 @@ header a {
 .navigation {
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 60px;
     align-items: center;
 }
 nav a {
     color: white;
     margin-right: 40px;
+    font-size: 22px;
 }
+
 .navlinks a:hover {
     color: var(--secondary);
     }
